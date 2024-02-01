@@ -9,6 +9,8 @@ const MainComponent = ({
   rightIcon,
   title,
   heading,
+  dosIcon,
+  dontsIcon,
 }) => {
   return (
     <div className={styles.mainWrapper} style={{ background: background }}>
@@ -24,15 +26,11 @@ const MainComponent = ({
           {dos.map((el, i) => (
             <div className={styles.box}>
               <div className={styles.dosContainer}>
-                <div className={styles.icon}>
-                  <i className="fa-solid fa-check"></i>
-                </div>
+                <div className={styles.icon}>{dosIcon}</div>
                 <p className={styles.info}>{el}</p>
               </div>
               <div className={styles.dontsContainer}>
-                <div className={styles.icon}>
-                  <i className="fa-solid fa-check"></i>
-                </div>
+                <div className={styles.icon}>{dontsIcon}</div>
                 <p className={styles.info}> {donts[i]}</p>
               </div>
             </div>

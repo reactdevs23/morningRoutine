@@ -65,19 +65,20 @@
 
 .info {
   font-size: 28px;
+  color: var(--textColor);
 }
 .icon {
   font-size: 25px;
-  color: var(--textColor);
+  color: var(--dosIconColor);
   min-width: 40px;
   height: 40px;
-  border: 3px solid var(--textColor);
+  border: 3px solid var(--dosIconColor);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .dontsContainer .icon {
-  border: 3px solid var(--secondaryColor);
-  color: var(--secondaryColor);
+  border: 3px solid var(--dontsIconColor);
+  color: var(--dontsIconColor);
 }

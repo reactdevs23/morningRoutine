@@ -13,6 +13,11 @@ function App() {
     heading: "Morning Routine",
     title: "Do's and Don'ts",
     rightIcon: <RightIcon color="#EAC303" />,
+    dosIcon: <i className="fa-solid fa-check"></i>,
+    dontsIcon: <i class="fa-solid fa-xmark"></i>,
+    dosIconColor: "#000",
+    dontsIconColor: "#000",
+
     dos: [
       "Make time for a delicious and nutrious breakfast",
       "Open you curtains to let the sun into your room",
@@ -32,6 +37,8 @@ function App() {
         "--primaryColor": data.primaryColor,
         "--secondaryColor": data.secondaryColor,
         "--textColor": data.textColor,
+        "--dosIconColor": data.dosIconColor,
+        "--dontsIconColor": data.dontsIconColor,
         fontFamily: data.fontFamily,
       }}
     >
